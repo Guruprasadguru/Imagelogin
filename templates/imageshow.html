@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Login Example{% endblock %}
+
+{% block page_content %}
+
+    <h1>Image show page </h1>
+    <p>This page can only be viewed by logged in users.</p>
+    <p>You are logged in as <b>{{ current_user.username }}</b>.</p>
+    {% for x in var %}
+    <img src={{ x }} alt="brother" width="500" height="333">
+    {% endfor %}
+{% endblock %}
